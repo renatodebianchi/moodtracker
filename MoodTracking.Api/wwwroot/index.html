@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoodTracking - Bem-vindo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #f8fafc;
+        }
+        .main-content {
+            margin-top: 100px;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 48px 36px 40px 36px;
+            text-align: center;
+        }
+        .logo {
+            width: 80px;
+            margin-bottom: 24px;
+        }
+        .welcome-title {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #222;
+        }
+        .welcome-desc {
+            font-size: 1.15rem;
+            color: #555;
+            margin-bottom: 32px;
+        }
+        .btn-frontend {
+            font-size: 1.1rem;
+            padding: 12px 32px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 main-content">
+                <img src="https://img.icons8.com/fluency/96/000000/happy--v2.png" class="logo" alt="Logo" />
+                <div class="welcome-title mb-3">Bem-vindo ao Mood Tracker</div>
+                <div class="welcome-desc mb-4">
+                    Monitore seu humor, registre emoções e acompanhe seu bem-estar de forma simples e segura.<br>
+                    Clique abaixo para acessar o painel completo do Mood Tracker!
+                </div>
+                <a id="btn-frontend" href="http://localhost:5173/" class="btn btn-primary btn-frontend">Ir para o Painel</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // URL do frontend configurada no appsettings.json
+        fetch('/appsettings.json')
+            .then(resp => resp.json())
+            .then(cfg => {
+                const url = cfg.Frontend && cfg.Frontend.Url ? cfg.Frontend.Url : 'http://localhost:5173/';
+                document.getElementById('btn-frontend').href = url;
+            });
+    </script>
+</body>
+</html>

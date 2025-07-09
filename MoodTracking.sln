@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodTracking.Api", "MoodTracking.Api\MoodTracking.Api.csproj", "{B2E5316E-F39B-43B9-A2ED-41E50D67759A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodTracking.Application", "MoodTracking.Application\MoodTracking.Application.csproj", "{6922C591-B7ED-42DB-8DC1-5106B3B23DB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodTracking.Domain", "MoodTracking.Domain\MoodTracking.Domain.csproj", "{4A7DBA20-0997-4DB2-A87B-E135C4EF3ADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodTracking.Infra.Data", "MoodTracking.Infra.Data\MoodTracking.Infra.Data.csproj", "{04A1F687-89DE-4DBE-9F43-4821023F1320}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodTracking.Infra.IoC", "MoodTracking.Infra.IoC\MoodTracking.Infra.IoC.csproj", "{3F3BB441-4C28-4D07-B63D-ACDDF162D025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodTracking.Test", "MoodTracking.Test\MoodTracking.Test.csproj", "{64741C4F-FF6B-4D9A-91AD-0D00107FC6F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2E5316E-F39B-43B9-A2ED-41E50D67759A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E5316E-F39B-43B9-A2ED-41E50D67759A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E5316E-F39B-43B9-A2ED-41E50D67759A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E5316E-F39B-43B9-A2ED-41E50D67759A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6922C591-B7ED-42DB-8DC1-5106B3B23DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6922C591-B7ED-42DB-8DC1-5106B3B23DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6922C591-B7ED-42DB-8DC1-5106B3B23DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6922C591-B7ED-42DB-8DC1-5106B3B23DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A7DBA20-0997-4DB2-A87B-E135C4EF3ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A7DBA20-0997-4DB2-A87B-E135C4EF3ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A7DBA20-0997-4DB2-A87B-E135C4EF3ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A7DBA20-0997-4DB2-A87B-E135C4EF3ADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04A1F687-89DE-4DBE-9F43-4821023F1320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A1F687-89DE-4DBE-9F43-4821023F1320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A1F687-89DE-4DBE-9F43-4821023F1320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A1F687-89DE-4DBE-9F43-4821023F1320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F3BB441-4C28-4D07-B63D-ACDDF162D025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3BB441-4C28-4D07-B63D-ACDDF162D025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3BB441-4C28-4D07-B63D-ACDDF162D025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3BB441-4C28-4D07-B63D-ACDDF162D025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64741C4F-FF6B-4D9A-91AD-0D00107FC6F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64741C4F-FF6B-4D9A-91AD-0D00107FC6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64741C4F-FF6B-4D9A-91AD-0D00107FC6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64741C4F-FF6B-4D9A-91AD-0D00107FC6F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
