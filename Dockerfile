@@ -14,7 +14,10 @@ RUN dotnet publish MoodTracking.Api/MoodTracking.Api.csproj -c Release -o /app/p
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
+RUN mkdir db
 COPY --from=build /app/publish .
+COPY MoodTracking.Api/LocalStorage.sqlite ./db/LocalStorage.sqlite
+RUN chmod 666 ./db/LocalStorage.sqlite
 ENV ASPNETCORE_URLS=http://+:80
 EXPOSE 80
 ENTRYPOINT ["dotnet", "MoodTracking.Api.dll"]
