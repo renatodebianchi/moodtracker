@@ -108,14 +108,14 @@ namespace MoodTracking.Api
         /// <param name="env">Informações sobre o ambiente de hospedagem.</param>
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) 
         { 
-            if (env.IsDevelopment()) 
-            { 
+            //if (env.IsDevelopment()) 
+            //{ 
                 app.UseDeveloperExceptionPage(); 
                 app.UseSwagger(); 
                 app.UseSwaggerUI(c => { 
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "MoodTracking.Api v1"); 
                 }); 
-            } 
+            //} 
             app.UseHttpsRedirection(); 
             app.UseCors("CorsPolicy"); 
             app.UseStaticFiles(); 
